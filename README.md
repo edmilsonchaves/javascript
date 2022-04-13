@@ -1,2 +1,2 @@
-# Cursos_JavaScript
+JavaScript
 Alguns exercícios da linguagem de programação JavaScript
