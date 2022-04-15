@@ -6,7 +6,7 @@ body {
 
 @font-face {
     font-family: 'digital';
-    src: url(/cronometro/fonts/DS-DIGI.TTF) format('truetype');
+    src: url(/fonts/DS-DIGI.TTF) format('truetype');
     font-weight: normal;
 }
 
