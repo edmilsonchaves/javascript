@@ -14,4 +14,4 @@ console.log('O melhor time do mundo é o '.concat(time.toUpperCase()).concat("!"
 console.log(`O melhor time do mundo é o ${time.toUpperCase()}!`)
 console.log(time.replace('h', 'H'))
 
-console.log('edmilson, arthur, leidimara'.split(','))
+console.log('joao, maria, jose'.split(','))

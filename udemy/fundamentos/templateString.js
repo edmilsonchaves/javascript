@@ -11,6 +11,6 @@ console.log(concatenacao, template)
 
 let up = texto => texto.toUpperCase()
 
-console.log(`Ei mano... ${up('javascript é foda')}!`)
+console.log(`Estudando a linguagem... ${up('javascript')}!`)
 
 
