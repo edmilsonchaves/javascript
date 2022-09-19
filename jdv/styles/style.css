@@ -103,11 +103,12 @@ header {
 
 .x {
     position: relative;
+    margin: auto;
 }
 
 .x::after {
     line-height: 100px;
-    position: absolute;
+    /* position: absolute; */
     content: '\274C';
     font-size: 50px;
     top: 0;
@@ -118,11 +119,12 @@ header {
 }
 .o {
     position: relative;  
+    margin: auto;
 
 }
 .o::after {
     line-height: 100px;
-    position: absolute;
+    /* position: absolute; */
     content: '\2B55';
     font-size: 50px;
     top: 0;
@@ -131,4 +133,12 @@ header {
     left: 0;
 }
 
+.o:hover {
+    cursor: not-allowed;
+    
+}
+
+.x:hover{
+    cursor: not-allowed;
+}
 
