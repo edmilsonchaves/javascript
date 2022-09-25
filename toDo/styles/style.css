@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: goldenrod;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-toDo {
+    background-color: aliceblue;
+    
+
+}
+
+.img img {
+    width: 100%;
+}
+
