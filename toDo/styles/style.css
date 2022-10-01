@@ -7,14 +7,16 @@
 }
 
 body {
-    background-color: goldenrod;
+    background-color: rgba(0, 0, 0, 0.26);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.877) 20%, goldenrod, rgba(0, 0, 0, 0.877) 92%);
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     
 
 }
@@ -34,7 +36,7 @@ header {
 
 .form-toDo {
     margin: auto;
-    width: 100%;
+    width: 70%;
     background-color: aliceblue;
     border-radius: 10px;
     box-shadow: 2px 2px 20px 1px black;
@@ -70,9 +72,6 @@ header {
 
 .new-tasks {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     
     
 }
@@ -83,10 +82,19 @@ h3 {
     margin-top: 15px;
     border-bottom: 1px solid black;
     text-transform:capitalize ;
-    width: 80%;
+    width: 90%;
+}
+
+.confirm {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 0px 0px 20px;
+
 }
 
 #new-task-add {
+    display: flex; 
+    width: 100%;
     margin: 20px 0px 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -94,18 +102,15 @@ h3 {
 
 }
 
-
-
 .done, .cancel {
-    display: inline-block;
     margin: 0px 20px 0px 2px;
     width: 25px;
     height: 25px;
     line-height:25px;
+    border-radius: 5px;
 }
-
 .done {
-    background-color:rgb(29, 240, 29);
+    background-color:rgb(12, 187, 12);
     color: white;
     font-size: 1.2rem;
     line-height:25px;
