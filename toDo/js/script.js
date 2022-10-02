@@ -11,14 +11,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     add_btn.addEventListener('click', (event) => {
         event.preventDefault()
 
-        document.querySelector('#new-task-add').style.textDecoration = 'none'
-        document.querySelector('#new-task-add').style.color = 'black'
-
+    
         if (tarefa.value == '') {
             alert('Campo inválido, insira uma tarefa!')
         } else {
             let teste = nova_tarefa.innerHTML += tarefa.value + '<br><br>'
-        confirm.innerHTML += '<div class"confirm"><button class="done" onclick="taskDone()">✔</button><button class="cancel" onclick="deleteTask()">✕</button></div></br>'
+        confirm.innerHTML += '<div class"confirm"><button class="done" onclick="taskDone()">✔</button><button class="cancel" onclick="delete()">✕</button></div></br>'
         tarefa.value = ''
         tarefa.focus()  
         }
