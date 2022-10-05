@@ -10,7 +10,6 @@ class Pessoa {
 }
 
 const p1 = new Pessoa('Arthur')
-p1.falar()
 
 
 const people = msg => {
@@ -18,3 +17,5 @@ const people = msg => {
 		falar: () => console.log(`Meu nome é ${msg}`)
 	}
 }
+
+
