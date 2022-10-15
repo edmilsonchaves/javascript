@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Lista de tarefas</title>
 </head>
 <body>
@@ -16,12 +18,30 @@
         <div class="topo-form">
             <h2>To do List</h2>          
             <div class="div-tarefa">
-                <input type="text" id="tarefa" placeholder="Digite aqui sua tarefa...">
-                <button id="buttonAddTask">+</button>
+                <input type="text" id="inputTarefa" placeholder="Digite aqui sua tarefa...">
+                <button id="buttonAddTask">
+                    <i class="fa fa-plus"></i>
+                </button>
             </div>
+            <h3>Novas tarefas</h3>
+            <ul class="listaTarefas">
+            <!--               
+                <li>
+                    <span class="textoTarefa">Tarefa 01</span>
+                    <div>
+                        <button class="btnAcao">
+                            <i class="fa fa-pencil"></i>
+                        </button>
+                        <button class="btnAcao">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </div>                    
+                </li>
+            <-->
+            </ul>
         </div>
     </div>
     
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
