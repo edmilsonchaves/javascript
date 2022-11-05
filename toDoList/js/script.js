@@ -78,10 +78,17 @@ function criarTagLI(tarefa) {
 // função editar / excluir tarefas
 
 function editar(idTarefa) {
-	alert(idTarefa)
+	let editar = 
 }
 
 function excluir(idTarefa) {
-	alert(idTarefa)
+	let confirmacao = window.confirm('Tem certeza que deseja excluir?')
+	if(confirmacao) {
+		let li = document.getElementById(''+idTarefa+ '')
+		if(li) {
+			listaTarefas.removeChild(li)
+		}
+	}
+	
 }
 
