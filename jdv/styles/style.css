@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    background-image: url(./img/bg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    color: crimson;
+}
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+    
+}
+
+.square {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Removendo bordar dos elmentos */
+.square:nth-child(1),
+.square:nth-child(2),
+.square:nth-child(3) {
+    border-top: none;
+}
+.square:nth-child(1),
+.square:nth-child(4),
+.square:nth-child(7) {
+    border-left: none;
+}
+.square:nth-child(7),
+.square:nth-child(8),
+.square:nth-child(9) {
+    border-bottom: none;
+}
+
+.square:nth-child(3),
+.square:nth-child(6),
+.square:nth-child(9) {
+    border-right: none;
+}
+
+/* Mensagem de Vitória */
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+    color:whitesmoke;
+
+}
+
+.winning-button {
+    background-color:crimson;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 2rem;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    
+}
+
+.winning-button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+/* Configurando peças */
+
+.x {
+    position: relative;
+    margin: auto;
+}
+
+.x::after {
+    line-height: 100px;
+    /* position: absolute; */
+    content: '\274C';
+    font-size: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
+}
+.o {
+    position: relative;  
+    margin: auto;
+
+}
+.o::after {
+    line-height: 100px;
+    /* position: absolute; */
+    content: '\2B55';
+    font-size: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.o:hover {
+    cursor: not-allowed;
+    
+}
+
+.x:hover{
+    cursor: not-allowed;
+}
+

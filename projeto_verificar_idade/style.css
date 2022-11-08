@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightblue
+}
+
+header {
+    text-align: center;
+    color:dodgerblue;
+    font-size: 24px;
+
+}
+
+section {
+    background-color:white;
+    text-align: justify;
+    width:400px;
+    height:auto;
+    padding:15px;
+    border-radius: 15px;
+    margin:auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.453)
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
