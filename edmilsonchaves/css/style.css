@@ -26,7 +26,7 @@
 }
 
 .bi-rocket-takeoff {
-    font-size: 6rem;
+    font-size: 5rem;
     padding: 1rem 6rem;
     color: var(--text-color);
 }
@@ -35,7 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     padding-right: 4rem;
     text-transform: uppercase;
     scroll-behavior:smooth;
@@ -49,7 +49,7 @@ i {
 
 a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--tertiary-text-color);
     font-weight: bolder;
     padding: 0.2rem 2rem;
@@ -70,7 +70,7 @@ a {
 
 main h1 {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--tertiary-text-color);
 }
 
@@ -81,19 +81,20 @@ main span {
 
 .job {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--tertiary-text-color);
     margin-bottom: 20px;
 }
 
 .description {
     max-width: 50%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: auto;
     text-align: justify;
     color: var(--tertiary-text-color);
     text-indent: 20px;
-    line-height: 30px;    
+    line-height: 30px;
+    font-weight: normal;
 }
 
 .socialMedia {
@@ -101,7 +102,7 @@ main span {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    height: 38vh;
+    margin: 50px 0px;
 
 
 }
@@ -127,11 +128,10 @@ main span {
 
 
 .subtitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin: auto;
-    font-weight: bolder;
-    margin-top: 15px;
+    font-weight: bold;
 
 
 }
@@ -149,6 +149,7 @@ main span {
     gap: 4rem;   
     margin-top: 15px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     
 
     
