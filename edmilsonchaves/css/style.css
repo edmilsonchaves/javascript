@@ -22,11 +22,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 
 }
 
 .bi-rocket-takeoff {
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 1rem 6rem;
     color: var(--text-color);
 }
@@ -35,25 +36,47 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding-right: 4rem;
     text-transform: uppercase;
     scroll-behavior:smooth;
     
 }
-i {
+#navbar i {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
 
 a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--tertiary-text-color);
     font-weight: bolder;
     padding: 0.2rem 2rem;
     
+}
+.externo {
+    padding: 0px;
+}
+
+main a, em {
+    color: var(--text-color);
+}
+
+a.externo::after {
+    content: "\1F517";
+    
+}
+a.externo:hover {
+    text-decoration: underline;
+    transition-duration: 1ms;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #navbar a:hover {
@@ -87,7 +110,7 @@ main span {
 }
 
 .description {
-    max-width: 50%;
+    max-width: 80%;
     font-size: 1.2rem;
     margin: auto;
     text-align: justify;
@@ -95,33 +118,6 @@ main span {
     text-indent: 20px;
     line-height: 30px;
     font-weight: normal;
-}
-
-.socialMedia {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 50px 0px;
-
-
-}
-
-.bi-github, .bi-linkedin {
-    font-size: 2rem;
-}
-.bi-github:hover {
-    cursor: pointer;
-    color:var(--text-color);
-    transition: 0.1s;
-
-}
-
-.bi-linkedin:hover {
-    cursor: pointer;
-    color:var(--text-color);
-    transition: 0.1s;
-
 }
 
 /*Projects*/
@@ -132,6 +128,7 @@ main span {
     text-align: center;
     margin: auto;
     font-weight: bold;
+    margin-top: 30px;
 
 
 }
@@ -190,10 +187,97 @@ main span {
 }
 
 .bi-arrow-up-square {
-    width: 100wv;
+    width: 100vw;
+    height: 100vh;
     margin-right: 50px;
     font-size: 2rem;
     color:var(--text-color);
+
+
+}
+
+/* contato*/
+
+section form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    justify-content: left;
+    font-size: 1.2rem;
+}
+
+section form input {
+    outline: none;
+}
+
+section form label {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+input {
+    max-width: 80vw;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+
+textarea {
+    max-width: 80vw;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1px solid;
     
+}
+
+.enviar {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin: 10px 0px 0px;
+    cursor:pointer;
+    outline: none;
+    border: 1px solid var(--tertiary-text-color);
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    color: var(--text-color);
+    transition: 0.1s;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #918e8e1a;
+}
+/* footer */
+
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top:20px;
+
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a {
+
+    margin: 2px;
+    text-align: center;
+    color: var(--tertiary-text-color);
 
 }
