@@ -3,15 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body {
     background-color: var(--main-color);
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
 :root {
     --main-color: #F0F4EF;
     --text-color: #0063B8;
-    --secondary-color:#EEE5E9 ;
-    --secondary-text-color: #FDFFFC ;
+    --secondary-color:#EEE5E9;
+    --secondary-text-color: #FDFFFC;
     --tertiary-text-color: #272727;
 
 }
@@ -22,13 +30,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 120px;
 
 }
 
 .bi-rocket-takeoff {
-    font-size: 4rem;
-    padding: 1rem 6rem;
+    font-size: 5rem;
+    padding: 3rem 6rem;
     color: var(--text-color);
 }
 
@@ -37,7 +45,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    padding-right: 4rem;
+    padding-right: 6rem;
     text-transform: uppercase;
     scroll-behavior:smooth;
     
@@ -61,6 +69,7 @@ a {
     padding: 0px;
 }
 
+
 main a, em {
     color: var(--text-color);
 }
@@ -80,7 +89,8 @@ a {
 }
 
 #navbar a:hover {
-    color: var(--text-color);
+    color: var(--secondary-text-color);
+    background-color: var(--text-color);
     transition: 0.1s;
     border: 1px solid var(--text-color);
     border-radius: 5px;
@@ -89,7 +99,15 @@ a {
 }
 
 
+
 /* main */
+
+.line {
+    margin: auto;
+    border-bottom: 2px solid var(--text-color);
+    max-width: 85vw;
+    margin-bottom: 20px;
+}
 
 main h1 {
     text-align: center;
@@ -120,16 +138,25 @@ main span {
     font-weight: normal;
 }
 
+.description p {
+    margin-bottom: 8px;
+}
+
 /*Projects*/
 
 
 .subtitle {
-    font-size: 2rem;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 20px;
+    color:var(--secondary-text-color);
+    background-color: var(--tertiary-text-color);
+    padding: 15px;
+    width: 80%;
     margin: auto;
-    font-weight: bold;
-    margin-top: 30px;
+    border-radius: 10px;
 
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, black 10%, var(--text-color)90%);
 
 }
 
@@ -143,29 +170,29 @@ main span {
 .div-projects {
     display: flex;
     justify-content: center;
-    gap: 4rem;   
-    margin-top: 15px;
+    gap: 2rem;   
+    margin-top: 50px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    
+    margin-bottom: 10px;  
 
     
 }
 
 .div-projects .project {
-    width: 300px;
-    height: 300px;
-    background-color: var(--tertiary-text-color);
-    color: var(--secondary-text-color);
-    line-height: 300px;
-    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: var(--text-color);
+    color: var(--main-color);
+    line-height: 250px;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.404);
+    border: 1px solid var(--tertiary-text-color);
 
 }
 
 /* skills */
+
 
 .div-skills {
     display: flex;
@@ -177,8 +204,20 @@ main span {
 
 .bi-filetype-html, .bi-filetype-css, .bi-filetype-js {
     font-size: 10rem;
-    color: var(--tertiary-text-color);
 
+}
+
+.bi-filetype-html {
+    color: #E36527;
+}
+
+.bi-filetype-css {
+    color: var(--text-color);
+
+}
+
+.bi-filetype-js {
+    color: #EAD41C;
 }
 
 #topo {
@@ -189,12 +228,63 @@ main span {
 .bi-arrow-up-square {
     width: 100vw;
     height: 100vh;
-    margin-right: 50px;
+    margin-right: 4rem;
     font-size: 2rem;
     color:var(--text-color);
 
+}
+
+.bootstrap, .react {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bootstrap p {
+    text-align: left;
+    max-width: 80%;
+}
+
+.react p {
+    max-width: 80%;
+    text-align: justify;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.backend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
 
 }
+
+.backend img {
+    max-width: 100px;
+    padding: 10px;
+}
+
+#grade {
+    text-align: center;
+    margin-bottom: 20px;
+    color:var(--secondary-text-color);
+    background-color: var(--text-color);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 50%;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+}
+
+.backend p {
+    font-size: 1.5rem;
+    color: var(--tertiary-text-color);
+    font-weight: bold;
+}
+
 
 /* contato*/
 
@@ -247,14 +337,18 @@ textarea {
     outline: none;
     border: 1px solid var(--tertiary-text-color);
     border-radius: 5px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .enviar:hover {
-    color: var(--text-color);
+    color: var(--secondary-text-color);
     transition: 0.1s;
     border: 1px solid var(--text-color);
     border-radius: 5px;
     box-shadow: 1px 1px 10px #918e8e1a;
+    font-weight: bold;
+    background-color: var(--text-color);
 }
 /* footer */
 
@@ -262,10 +356,6 @@ footer img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-top:20px;
-
-
-
 }
 
 footer {
