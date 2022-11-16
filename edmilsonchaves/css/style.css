@@ -98,7 +98,9 @@ a {
 
 }
 
-
+#skills01, #projects01, #contact01 {
+    margin-bottom: 30px;
+}
 
 /* main */
 
@@ -147,16 +149,15 @@ main span {
 
 .subtitle {
     text-align: left;
-    margin-bottom: 20px;
     color:var(--secondary-text-color);
     background-color: var(--tertiary-text-color);
     padding: 15px;
     width: 80%;
     margin: auto;
     border-radius: 10px;
-
     font-size: 1.5rem;
     background-image: linear-gradient(to right, black 10%, var(--text-color)90%);
+
 
 }
 
@@ -339,6 +340,7 @@ textarea {
     border-radius: 5px;
     font-weight: bold;
     line-height: 30px;
+    background-color:beige;
 }
 
 .enviar:hover {
