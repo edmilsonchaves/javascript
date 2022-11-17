@@ -9,4 +9,25 @@
 */
 
 
+function primeiraFuncao() {
 
+    console.log('Hello World das funções')
+}
+
+primeiraFuncao()
+
+function dizerNome(nome) {
+
+    console.log(`Olá ${nome}, tenha um bom dia!`)
+
+}
+
+dizerNome('Arthur')
+
+function soma(a, b) {
+    
+    return a + b 
+}
+
+var resultado = soma(5, 4)
+console.log(resultado)
