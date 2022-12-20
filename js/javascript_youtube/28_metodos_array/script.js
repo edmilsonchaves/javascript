@@ -1,60 +1,44 @@
 
 /**
- * MÉTODOS ARRAYS
+* MÉTODOS ARRAYS PARTE 2
  
- * Os arrays também possui métodos;
- * Facilitando nossa vidas para: adicionar e remover elementos,
- resgatar apenas uma parte de um array e etc;
- */
+* Podemos resgatar um conjunto de elementos com os métodos;
+* Identificar o índice de um elemento específico e muito mais;
+
+*/
+
+// splice - Podemos adicioanar um elemento no meio de um array.
+
+let numbers = [1,5,32,55,756,121]
+ 
+console.log(numbers)
+
+numbers.splice(2, 0, 10)
+
+console.log(numbers)
+
+numbers.splice(4, 1)
+
+console.log(numbers)
 
 
- // length - Podemos checar o tamanho do array com essa propriedade.
+//indexOf
 
- let arr = [1, 2, 5, 10, 33, 585]
+console.log(`O número 121 esta no índice ${numbers.indexOf(121)}`)
 
- console.log(arr.length)
+//join - Podemos transformar um array em string.
 
-// push - Podemos adicionar elementos com essa propriedade.
+let msg = ["O", "sucesso", "é", "a", "soma", "de", "pequenos", "esforços", "dia", "após", "dia"]
 
-arr.push(1000)
-arr.push('podemos adicionar qualquer elemento')
-console.log(arr)
+console.log(msg)
 
-// pop - para remover o  último elemento de um array
+let msg2 = msg.join(" ")
 
-arr.pop()
+console.log(msg2)
+console.log(msg2.split(" "))
 
-console.log(arr)
+//reverse - Podemos inverter um array com esse método.
 
-// unshift - para adicionar o elemento no início do array
-
-arr.unshift(21)
-
-console.log(arr)
-
-// shift - para remover um elemento do início do array similar ao pop()
-
-arr.shift()
-
-console.log(arr)
-
-
-// acessar o último elemento de um array
-
-console.log(arr[arr.length -1])
-
-//isArray - podemos usar para verificar se é um array.
-
-console.log(Array.isArray(5))
-
-let valor = Array.isArray(arr)
-
-if (valor == true) {
-    
-    console.log('É um array')
-
-} else {
-    console.log('Não é um array')
-}
+console.log(msg.reverse())
 
 
