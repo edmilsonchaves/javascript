@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'doces';
+    src: url(../Egg\ Hunter.ttf) format('truetype');
+}
+
+:root {
+    --main-color: #EF476F;
+    --secondary-color: #06D6A0;
+    --tertiary-color: #256EFF;
+}
+
+#header-top {
+    width: 100%;
+    height: 90px;
+    background-image: url(../img/strawberry\ drop-shaped\ sweet\ candy_5569169.png);
+    background-size: 200px 200px;
+    background-position: center;
+}
+header#header {
+    text-align: center;
+    
+}
+
+#header h1 {
+    margin: auto;
+    font-family: 'doces', 'Helvetica';
+    font-size: 5rem;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    width: 90%;
+    max-width: 90%;
+    margin-bottom: 1rem;
+
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    padding: 2rem;
+    max-width: 90%;
+    gap: 1rem;
+    border-radius: .25rem;
+    box-sizing: border-box;
+
+}
+
+section:hover {
+    border-radius: .25rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.section-img {
+    width: 500px;
+    max-width:60%;
+    border-radius: .25rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.527);
+}
+
+#description {
+    color: chocolate;
+    width: 50%;
+
+}
+
+footer {
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    width:100%;
+    text-align: center;
+    padding:1rem;
+    color: aliceblue;
+    font-family: 'doces';
+    font-size: 1.2rem;
+
+}
+
+@media (max-width: 670px) {
+    section {
+        display: block;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #description {
+        width: 100%;
+        text-align:justify;
+        text-indent: 20px;
+        padding-bottom: 1rem;
+        
+    }
+    
+    .section-img {
+        width: 100%;
+        max-width: 90%;
+        
+}
+
+@media (max-width: 450px) {
+    section {
+        display: block;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #description {
+        width: 100%;
+        text-align:justify;
+        text-indent: 20px;
+        padding-bottom: 1rem;
+        
+    }
+    
+    .section-img {
+        width: 100%;
+        max-width: 90%;
+        
+}   
