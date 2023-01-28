@@ -8,8 +8,11 @@
 
 body {
     padding: 1rem;
-    background-color: #CCC;
+    background-color: #005DC4;
     background-image: url(../image/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -27,7 +30,7 @@ form {
     width: 500px;
     max-width:95%;
     margin: 0 auto;
-    background-color: rgba(51, 51, 51, 0.248);
+    background-color: #fff2ff2c;
     padding: 1rem;
     border-radius: 5px;
     
