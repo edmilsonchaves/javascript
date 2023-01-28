@@ -1,0 +1,24 @@
+
+h2 {
+    text-align: center;
+
+}
+
+.hide {
+    display: none;
+}
+
+.oculto {
+    text-align: center;
+    display: none;
+    color: #077BFF;
+    font-size: 5rem;
+    
+}
+
+.mouse {
+    text-align: center;
+    color: #077BFF;
+    font-weight: bolder;
+    font-size: 4rem;
+}
