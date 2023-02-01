@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Helvetica;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg,#0077b6, #333);
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #FFF;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+#tasks-list-container {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#header-top h2 {
+    margin-top: 30px;
+    width: 500px;
+}
+
+#add-task-form {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    
+}
+
+#add-task-form input {
+    box-sizing: border-box;
+}
+
+#taks-title {
+    padding: 10px;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+}
+
+#taks-title:focus {
+    outline: none;
+}
+
+#add-btn {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    background-color: #333;
+    border: none;
+    transition: .5s;
+    color: #FFF;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    
+}
+
+#taks-title::placeholder {
+    font-size: 1rem;
+    padding-left: 10px;
+    color:#0076b6da;
+}
+
+#add-btn:hover {
+    background-color: #0077b6;
+    color: #CCC;
+}
+
+
+ion-icon {    
+    font-size: 2rem;
+
+}
+
+/*Lista de tarefas*/
+
+#task-list {
+    list-style: none;
+    padding-left: 0;
+    width: 450px;
+    margin: auto;
+
+}
+
+#task-list li {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.198);
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #CCC;
+    margin-bottom: 20px;
+    transition: .5s;
+    padding-left: 15px;
+    font-weight: bold;
+    
+}
+
+#task-list li span {
+    font-size: 18px;
+}
+
+#task-list ion-icon {
+    position: absolute;
+}
+
+.done-btn {
+    top:0;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    transition: .5s;
+}
+
+.remove-btn {
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    transition: .5s;
+}
+
+.done-btn:hover {
+    background-color: #09E01B;
+}
+
+.remove-btn:hover {
+    background-color: #EB0927;
+}
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!--Google Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+    <div id="tasks-container">
+        <div id="header-top">
+            <h2>Salve suas tarefas:</h2>
+            <form id="add-task-form">
+                <input type="text" id="taks-title" placeholder="O que você vai fazer?">
+                <button id="add-btn" type="submit">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </form>
+        </div>
+        <h2>Estas são suas tarefas:</h2>
+        <div id="tasks-list-container">
+            <ul id="task-list">
+                <li class="task-box">
+                    <span class="task-title">teste</span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">teste</span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">teste</span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
