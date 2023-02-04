@@ -35,6 +35,7 @@ body {
 
 #header-top {   
     margin: auto;
+    padding-top: 50px;
 
 }
 
@@ -59,7 +60,7 @@ body {
     
 }
 
-#taks-title {
+#tasks-title {
     width: 90%;
     height: 40px;
     line-height: 40px;
@@ -69,7 +70,7 @@ body {
     
 }
 
-#taks-title:focus {
+#tasks-title:focus {
     outline: none;
 }
 
@@ -87,7 +88,7 @@ body {
     
 }
 
-#taks-title::placeholder {
+#tasks-title::placeholder {
     font-size: 1rem;
     padding-left: 10px;
     color:#0076b6da;
@@ -116,11 +117,12 @@ ion-icon {
 
 #task-list li {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.198);
+    background-color: #CCC;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
     text-align: left;
     height: 40px;
     line-height: 40px;
-    border-bottom: 2px solid #CCC;
+    border-radius: 5px;
     margin-bottom: 20px;
     transition: .5s;
     padding-left: 15px;
@@ -130,6 +132,7 @@ ion-icon {
 .task-box {
     margin: auto;
     max-width: 500px;
+    color: #333;
 
 }
 
@@ -159,17 +162,19 @@ ion-icon {
 
 .done-btn:hover {
     background-color: #09E01B;
+    color: #FFF;
 }
 
 .remove-btn:hover {
     background-color: #EB0927;
+    color: #FFF;
 }
 
 
 /*Media Queries*/
 
 @media (max-width: 500px) {
-    #taks-title {
+    #tasks-title {
         width: 85%;
         height: 40px;
         line-height: 40px;
@@ -180,3 +185,31 @@ ion-icon {
     }
 }
 
+.hide {
+    display: none;
+
+}
+
+.done {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #FFF;
+    background-color: black;
+    transition: .5s;
+}
+
+#task-list li.done {
+    position: relative;
+    background-color: #333;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: .5s;
+    padding-left: 15px;
+    font-weight: bold;
+
+
+}
