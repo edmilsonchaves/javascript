@@ -18,7 +18,7 @@
 }
 
 #header-top {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 90px;
     background-image: url(../img/strawberry\ drop-shaped\ sweet\ candy_5569169.png);
@@ -27,105 +27,101 @@
 }
 
 
-#menu {
-    padding-left: 5rem;
-    padding-top: 6.5rem;
-    position: relative;
-  
 
+#title {
+    padding-top: 80px;
+    font-family: 'doces';
 }
-#menu ion-icon {
-    color:var(--main-color);
-    font-size: 2rem;
-    position: relative;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 1;
-    transition: .5s;
-    
-}
-
-#menu ion-icon:hover {
-    color: var(--tertiary-color);
-}
-
-
-span {
-    position: absolute;
-    height: 2rem;
-    line-height: 2rem;
-    color: var(--main-color);
-    font-weight: bold;
-    margin-left: .5rem;
-    font-size: 1.2rem;
-    
-}
-
-
-#options .list-menu {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    gap: .5rem;
-
-
-}
-
-ul {
-    background-color:#FFF;
-    width: 160px;  
-    opacity: 1;   
-    border-right: 1px solid var(--main-color);
-
-}
-
-.list-menu a {
-    text-decoration: none;
-    background-color: var(--main-color);
-    color:#FFF;
-    opacity: .8;
-    transition: .5s;
-    width: 130px;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    border: 1 solid var(--main-color);
-    border-radius: 3px;
-    
-    
-
-}
-
-.list-menu a:hover {   
-    color:#FFF;    
-    background-color: var(--main-color);
-    border: 1px solid #FFF;
-    opacity: 1;
-    
-    
-
-}
-
 #title h1 {
-    position: fixed;   
-    left: 50%;    
-    top: 20%;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    max-width: 90%;
+    margin-bottom: 10px;
     font-family: 'doces';
     font-size: 5rem;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+
+}
+
+.container {
+    margin:auto;
+    text-align:center;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
     color:var(--main-color)
 }
 
 
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+nav a {
+    text-decoration: none;
+    height: 20px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color:var(--tertiary-color);
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+
+nav a::after{  
+    content: " ";
+    width: 0%;
+    height:2px;
+    background-color: var(--tertiary-color);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+
+}
+
+nav a:hover::after {
+    width: 100%;
+    background-color: var(--tertiary-color);
+}
 .hide {
     display: none;
 }
 
-@media(max-width:500px) {
-    #menu {
-        position: static !important;
+/*media query*/
+
+@media (max-width:480px) {
+    
+    #title {
+        padding-top: 60px;
+        font-family: 'doces';
+    }    
+    
+    #navigation {
+        display: block;
+        
     }
-}   
+    nav a{
+        margin: auto;
+        display: block;
+        height: 50px;
+        margin-bottom: 15px;
+        flex-direction: column;
+        color: #FFF;
+        font-weight: bold;
+        justify-content: center;
+        width: 90%;
+        background-color: var(--main-color);
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.355);
 
-
+    }
+    .menu-btn {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color:var(--main-color)
+    }
+}
