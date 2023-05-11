@@ -1,7 +1,7 @@
 
 /*
 
-    ESTRUTURA WHILE
+ESTRUTURA WHILE
 
 * O while é uma estrutura de repetição mais simples do Javascript;
 * A idéia é que se repita algo até atingir tal condição;
@@ -13,25 +13,24 @@
 
 // podemos usar laço while para percorrer o array. 
 
-var pessoas = ['leidimara', 'arthur', 'edmilson', 'joao', 'maria', 'jose']
+// var pessoas = ['Arthur', 'Leidimara', 'Edmilson', 'Maria', 'João', 'Roberta'];
 
-i = 0
+// i = 1;
 
-while (i < pessoas.length) {
-    console.log(pessoas[i])
+// while (i < pessoas.length) {
+//     console.log(`Item ${i}: ${pessoas[i]}`)
 
-    i++
+//     i++
+// }
+
+var nome = 'Edmilson';
+
+n = 0;
+
+while (n < nome.length) {
+    console.log(nome[n]);
+
+    n++
 }
 
-// Usando while para percorrer uma variável
 
-let language = 'javascript'
-
-j = 0
-
-while ( j < language.length) {
-    
-    console.log(language[j])
-
-    j++
-}

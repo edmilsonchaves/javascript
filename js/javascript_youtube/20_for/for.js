@@ -6,17 +6,31 @@
 
 */
 
-for(let num = 0; num <= 10; num++ ) {
+// for(let num = 0; num <= 10; num++ ) {
     
-    console.log(`Valor de num ${num}`)
+//     console.log(`Valor de num ${num}`)
+// }
+
+// // Podemos fazer também com arrays
+
+// let nomes = ['arthur', 'anna clara', 'theo', 'edmilson']
+
+// for(let i = 0; i < nomes.length; i++) {
+
+//     console.log(nomes[i])
+
+// }
+
+for (let n = 0; n <=5; n++) {
+    console.log(n)
 }
 
-// Podemos fazer também com arrays
+let nomes = ['Arthur', 'Sousa', 'Chaves']
 
-let nomes = ['arthur', 'anna clara', 'theo', 'edmilson']
+for (let n = 0; n < nomes.length; n++) {
+    console.log(nomes[n])
 
-for(let i = 0; i < nomes.length; i++) {
 
-    console.log(nomes[i])
 }
+
 
