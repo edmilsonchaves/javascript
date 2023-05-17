@@ -1,4 +1,5 @@
-* {
+* 
+{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -107,7 +108,7 @@ a {
 .line {
     margin: auto;
     border-bottom: 2px solid var(--text-color);
-    max-width: 85vw;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -130,7 +131,7 @@ main span {
 }
 
 .description {
-    max-width: 80%;
+    max-width: 90%;
     font-size: 1.2rem;
     margin: auto;
     text-align: justify;
@@ -142,6 +143,7 @@ main span {
 
 .description p {
     margin-bottom: 8px;
+    padding-bottom: 1rem;
 }
 
 /*Projects*/
@@ -196,11 +198,10 @@ main span {
 
 
 .div-skills {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
     gap: 5rem;
-    align-items: flex-end;
+   
 }
 
 .bi-filetype-html, .bi-filetype-css, .bi-filetype-js {
@@ -268,16 +269,13 @@ main span {
     padding: 10px;
 }
 
-#grade {
+h3#grade {
+    margin: 0;
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    color:var(--secondary-text-color);
-    background-color: var(--text-color);
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 50%;
-    margin: auto;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+    color:var(--text-color);
+    padding: 10px 0px;
 }
 
 .backend p {
@@ -290,16 +288,20 @@ main span {
 /* contato*/
 
 section form {
+
     margin: auto;
     display: flex;
     flex-direction: column;
-    max-width: 700px;
     justify-content: left;
     font-size: 1.2rem;
 }
 
 section form input {
     outline: none;
+}
+input#name, #email, #assunto {
+    font-size: 1rem;
+    width: 100%;
 }
 
 section form label {
@@ -309,7 +311,7 @@ section form label {
 }
 
 input {
-    max-width: 80vw;
+    max-width: 100%;
     height: 30px;
     border-radius: 5px;
     outline: none;
@@ -319,7 +321,7 @@ input {
 }
 
 textarea {
-    max-width: 80vw;
+    width: 100%;
     border-radius: 5px;
     font-size: 16px;
     outline: none;
@@ -378,37 +380,120 @@ footer a {
 
 @media (min-width: 300px) {
     body {
+        width: 95%;
+        margin: auto;
+    }
+
+    .line {
+        width: 100%;
         margin: auto;
     }
     #navbar {
-        display: block;
+        display: none;
     }
-    .form {
-        max-width: 70vw;
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .bi-rocket-takeoff {
+        font-size: 7rem;
+        padding-top: 0;
+
+    }
+
+    .aboutMe {
+        width: 100%;
+    }
+
+    .aboutMe h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+
+    #name {
+        font-size: 2rem; 
+    }
+
+    .job {
+        width: 95%;
+        font-size: 1.1rem;
+        text-align: center;
         margin: auto;
+        padding-bottom: 1rem;
+    }
+
+    .description {
+        width: 95%;
+    }
+
+
+    .div-projects {
+        display: flex;
+        flex-direction: column;
+        line-height: 250px;
+        height: 250px;
+        margin-bottom: 3rem;
+       
     }
     .breve-02, .breve-03 {
         display: none;   
 
     }
     .breve-01 {
-        margin-left: 70px;
-    }
-
-    #grade{
-        max-width: 100vw;
-        font-size: 1.1rem;
-    }
-   
-
-    .div-skills {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        align-items: flex-end;
+        margin: auto;
 
     }
+
+    .subtitle {
+        width: 100%;
+    }
+
+
+    #grade {
+        font-size: 3rem;
+        width: 100%;
+        margin: auto;
+        line-height: 3rem;
+ }
+
+ .backend {
+    width: 100%;
+ }
+ .backend img {
+    padding-right: 30px;
+ }
+
+  .backend p{
+    font-size: 1.2rem;
+
+  }
+
+  .logo {
+    display: block;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bi-filetype-html, .bi-filetype-css, .bi-filetype-js {
+    font-size: 6rem;
+  }
+
+  section #contact {
+    width: 100vw;
+  }
+
+  section input {
+    margin:auto;
+  }
+
+  section textarea {
+    margin:auto ;
+    width: 100%;
+  }
 
     @media (min-width: 800px) {
         body {
@@ -424,6 +509,46 @@ footer a {
         .breve-02 {
             display: block;   
     
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+        
+        }
+        
+        .bi-rocket-takeoff {
+            font-size: 5rem;
+            padding: 3rem 6rem;
+            color: var(--text-color);
+        }
+        
+        #navbar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            padding-right: 6rem;
+            text-transform: uppercase;
+            scroll-behavior:smooth;
+            
+        }
+        #navbar i {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        
+        
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: var(--tertiary-text-color);
+            font-weight: bolder;
+            padding: 0.2rem 2rem;
+            
         }
         
     
@@ -449,3 +574,4 @@ footer a {
     
     
     }
+}
