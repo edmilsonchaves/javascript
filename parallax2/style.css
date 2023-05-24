@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    background-image: url(https://images.pexels.com/photos/1048273/pexels-photo-1048273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.wave-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1.title {
+    color: #FFF;
+    font-family: cursive;
+    font-size: 2rem;
+    position: fixed;
+    z-index: -1;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.wave {
+    width: 100%;
+    height: 150px;
+    background-image: url(./img/wave.png);
+    bottom: 0;
+    position: absolute;
+    background-size: 1000px 150px; /*mudar essa opçõa para mobile*/
+    animation: waveAnimated 3s ease-in-out infinite alternate;
+}
+
+@keyframes waveAnimated {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+#wave4 {
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+}
+
+section.content {
+    padding: 20px;
+    background-color: #FFF;
+
+}
+
+.subtitle {
+    font-family: cursive;
+}
+
+section.content p {
+    padding-top: 20px;
+    text-indent: 20px;
+    line-height: 25px;
+}
+
+footer {
+    background-color: black;
+    padding: 50px;
+    color: #FFF;
+    text-align: center;
+    font-family: cursive;
+
+}
