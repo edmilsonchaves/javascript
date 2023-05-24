@@ -12,3 +12,4 @@ window.addEventListener('scroll', function(){
     onda4.style.backgroundPositionX = 400 + rolagemPos * -2 + 'px'
 })
 
+
