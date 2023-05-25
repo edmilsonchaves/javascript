@@ -41,13 +41,17 @@ body {
     padding: 3rem 6rem;
     margin-bottom: 2rem;
     color: var(--text-color);
-    animation: rocketAnimated 3s ease-in-out infinite alternate;
+    animation: rocketAnimated 4s ease-in-out infinite alternate;
 }
 
 @keyframes rocketAnimated {
     0% {
-        transform: rotate(20deg);
+        transform: translateY(0px);
         
+    }
+
+    50% {
+        transform: rotate(2deg);
     }
   
     100% {
