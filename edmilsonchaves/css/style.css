@@ -39,9 +39,22 @@ body {
 .bi-rocket-takeoff {
     font-size: 5rem;
     padding: 3rem 6rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
+    animation: rocketAnimated 3s ease-in-out infinite alternate;
 }
 
+@keyframes rocketAnimated {
+    0% {
+        transform: rotate(20deg);
+        
+    }
+  
+    100% {
+        transform: translateY(10px);
+    
+    }
+}
 .externo {
     padding: 0px;
 }
