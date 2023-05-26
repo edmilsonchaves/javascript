@@ -7,12 +7,14 @@
     
 }
 
+
 body {
     background-image: url(../img/bg.jpg);
     background-color: var(--main-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 
 }
 
@@ -41,8 +43,73 @@ body {
     padding: 3rem 6rem;
     margin-bottom: 2rem;
     color: var(--text-color);
+    position: relative;
     animation: rocketAnimated 4s ease-in-out infinite alternate;
+    z-index: 999;
 }
+
+.bi-stars {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 7px;
+    position: absolute;
+    content: '';
+    z-index: 10;
+    animation: starAnimated01 20s linear infinite;
+    
+
+  }
+
+  .star2 {
+    position: absolute;
+    margin-top: 100px;
+    font-size: 1rem;
+    content: ' ';
+    z-index: -1;
+    animation: starAnimated02 25s linear infinite;
+
+  }
+
+  .star3 {
+    position: absolute;
+    margin-top: 60px;
+    font-size: 1rem;
+    content: ' ';
+    z-index: -1;
+    animation: starAnimated03 30s linear infinite;
+
+  }
+
+
+  @keyframes starAnimated01 {
+    0% {
+        margin-right: -110%;
+    }
+    100% {
+        margin-left: -110%;
+    }
+  }
+
+  @keyframes starAnimated02 {
+    0% {
+        margin-right: -170%;
+    }
+    100% {
+        margin-left: -110%;
+    }    
+  }
+
+  @keyframes starAnimated03 {
+    0% {
+        margin-right: -250%; color: #0063B8;
+        }
+    67% {color: #0063B8; font-size: 1rem;}
+    70% {color: transparent; font-size: 0px;}
+    74% {color: #0063B8; font-size: 1rem;}
+    100% {
+        margin-left: -110%;
+    }
+  }
 
 @keyframes rocketAnimated {
     0% {
@@ -295,6 +362,8 @@ section form input {
 input#name, #email, #assunto {
     font-size: 1rem;
     width: 100%;
+    border-style: none;
+    border: solid 1px grey;
 }
 
 section form label {

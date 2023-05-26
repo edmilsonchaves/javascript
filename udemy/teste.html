@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: move;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes move {
+      0% {
+        left: 0;
+        top: 0;
+      }
+      50% {
+        left: 200px;
+        top: 200px;
+      }
+      100% {
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML -->
+  <div class="box"></div>
+
+  <!-- JavaScript -->
+  <script>
+    // JavaScript
+    // Não é necessário adicionar nenhuma lógica JavaScript para a animação keyframes funcionar.
+  </script>
+</body>
+</html>
