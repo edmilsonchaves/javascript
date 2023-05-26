@@ -9,11 +9,10 @@
 
 
 body {
-    background-image: url(../img/bg.jpg);
-    background-color: var(--main-color);
+    background-color:ghostwhite;
     background-repeat: no-repeat;
+    background-position:center;
     background-size: cover;
-    background-position: center;
     overflow-x: hidden;
 
 }
@@ -34,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 130px;
 
 }
 
@@ -149,15 +148,6 @@ a {
     cursor: pointer;
 }
 
-#navbar a:hover {
-    color: var(--secondary-text-color);
-    background-color: var(--text-color);
-    transition: 0.1s;
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
-    box-shadow: 1px 1px 10px #4242423d;
-
-}
 
 #skills01, #projects01, #contact01 {
     margin-bottom: 30px;
@@ -249,8 +239,8 @@ main span {
     line-height: 250px;
     margin-bottom: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.404);
-    border: 1px solid var(--tertiary-text-color);
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.404);
+    border: 1px solid var(--text-color);
 
 }
 
@@ -258,9 +248,12 @@ main span {
 
 
 .div-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     text-align: center;
-    gap: 5rem;
+    gap: 4rem;
    
 }
 
@@ -353,7 +346,6 @@ section form {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    font-size: 1.2rem;
 }
 
 section form input {
@@ -389,7 +381,7 @@ textarea {
     outline: none;
     padding-top: 5px;
     padding-left: 10px;
-    border: 1px solid;
+    /* border-style: outset; */
     
 }
 
@@ -405,6 +397,7 @@ textarea {
     font-weight: bold;
     line-height: 30px;
     background-color:beige;
+  
 }
 
 .enviar:hover {
@@ -415,6 +408,8 @@ textarea {
     box-shadow: 1px 1px 10px #918e8e1a;
     font-weight: bold;
     background-color: var(--text-color);
+    transition: 400ms;
+    
 }
 /* footer */
 
@@ -491,6 +486,16 @@ footer a {
         width: 95%;
     }
 
+    .div-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+       
+    }
+
 
     .div-projects {
         display: flex;
@@ -562,6 +567,16 @@ footer a {
     .aboutMe h1 {
         font-size: 3rem;
         margin-top: 2rem;
+    }
+
+    .div-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 5rem;
+       
     }
 
     #name {
